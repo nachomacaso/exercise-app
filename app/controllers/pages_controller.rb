@@ -17,17 +17,7 @@ class PagesController < ApplicationController
   end
 
   def page_visits
+    @count = 0
     @count =+ 1
-  end
-
-  def bottles
-    @bottles = 99
-    @song = ''
-    99.times do
-      @song = "#{@bottles} of beer on the wall. #{@bottles} bottles of beer!  Take one down, pass it around:  "
-    end
-    @song
-      @bottles -= 1
-      @song = "#{@bottles} of beer on the wall."
   end
 end
